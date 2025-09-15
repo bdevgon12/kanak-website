@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanak Industries — Plastic Injection Molding</title>
+  <meta name="description"
+    content="Kanak Industries offers precision plastic injection molding, tooling coordination, and contract manufacturing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="container header">
+    <div class="brand">
+      <span class="logo">KI</span>
+      <span class="name">Kanak Industries</span>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#capacity">Capacity</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>Precision Plastic Injection Molding</h1>
+    <p>We manufacture high‑quality custom plastic components for appliances, automotive, and consumer products. Rapid
+      sampling, reliable production, and on‑time delivery.</p>
+    <a class="cta" href="#contact">Request a Quote</a>
+  </section>
+
+  <section id="services" class="container section grid-3">
+    <div class="card">
+      <h3>Injection Molding</h3>
+      <p>Two in‑house machines with tight process control. Support for PP, ABS, and more.</p>
+    </div>
+    <div class="card">
+      <h3>Tooling Coordination</h3>
+      <p>We manage mold development with trusted partners and oversee trials & quality.</p>
+    </div>
+    <div class="card">
+      <h3>Contract Manufacturing</h3>
+      <p>Scale up with our vendor network for peak‑season demand without compromising quality.</p>
+    </div>
+  </section>
+
+  <section id="industries" class="container section grid-3">
+    <div class="card">
+      <h3>Home Appliances</h3>
+      <p>Durable, clean finishes for daily‑use components.</p>
+    </div>
+    <div class="card">
+      <h3>Automotive</h3>
+      <p>Consistent quality with production tracking and packaging controls.</p>
+    </div>
+    <div class="card">
+      <h3>Consumer Products</h3>
+      <p>Fast sampling and small‑batch runs to validate your product quickly.</p>
+    </div>
+  </section>
+
+  <section id="capacity" class="container section">
+    <h2>Capacity & Specs</h2>
+    <ul class="list">
+      <li>Machine utilization: scalable across single or multi‑shift operations</li>
+      <li>Materials: PP (fresh/second), ABS, and more on request</li>
+      <li>Monthly output: up to 100,000 units depending on part</li>
+      <li>Mold development up to 2kg / 1 cu ft via partners</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2>Request a Quote</h2>
+    <p>Tell us about your part, material, and quantity requirements. We'll get back within 1 business day.</p>
+    <!-- Netlify Forms: keep this form name consistent; action goes to thanks page -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html"
+      class="form">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+      <div class="row">
+        <label>Full Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <div class="row">
+        <label>Company
+          <input type="text" name="company">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone">
+        </label>
+      </div>
+      <label>Project Details (material, part size, quantity, timeline)
+        <textarea name="details" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="cta">Send Request</button>
+    </form>
+  </section>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Kanak Industries · Haridwar · Contract manufacturing available</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
